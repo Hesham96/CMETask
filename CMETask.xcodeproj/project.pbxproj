@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		14011AC32D2D7693006C020E /* CountriesList in Frameworks */ = {isa = PBXBuildFile; productRef = 14011AC22D2D7693006C020E /* CountriesList */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		14011A802D2D5D32006C020E /* CMETask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMETask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		14011AA82D2D6B0D006C020E /* Exceptions for "CMETask" folder in "CMETask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Modules/CountriesList,
+			);
+			target = 14011A7F2D2D5D32006C020E /* CMETask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		14011A822D2D5D32006C020E /* CMETask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				14011AA82D2D6B0D006C020E /* Exceptions for "CMETask" folder in "CMETask" target */,
+			);
 			path = CMETask;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14011AC32D2D7693006C020E /* CountriesList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,9 +51,12 @@
 			isa = PBXGroup;
 			children = (
 				14011A822D2D5D32006C020E /* CMETask */,
+				14011AC12D2D7693006C020E /* Frameworks */,
 				14011A812D2D5D32006C020E /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		14011A812D2D5D32006C020E /* Products */ = {
 			isa = PBXGroup;
@@ -43,6 +64,13 @@
 				14011A802D2D5D32006C020E /* CMETask.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		14011AC12D2D7693006C020E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +93,7 @@
 			);
 			name = CMETask;
 			packageProductDependencies = (
+				14011AC22D2D7693006C020E /* CountriesList */,
 			);
 			productName = CMETask;
 			productReference = 14011A802D2D5D32006C020E /* CMETask.app */;
@@ -257,8 +286,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,8 +313,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +349,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14011AC22D2D7693006C020E /* CountriesList */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesList;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14011A782D2D5D32006C020E /* Project object */;
 }
