@@ -6,24 +6,30 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CountryCardView: View {
 
     // MARK: - Properties
 
-    let image: String
+    let flagURL: String
     let title: String
 
     // MARK: - View
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: image)
-                .resizable()
-                .frame(width: 32, height: 32)
-                .padding(.leading, 8)
+            KFImage(URL(string: flagURL))
+                .placeholder {
+                    Circle()
+                        .foregroundColor(.gray)
+                }
+              .retry(maxCount: 3, interval: .seconds(5))
+              .resizable()
+              .aspectRatio(contentMode: .fit)
+              .frame(width: 32, height: 32)
+              .padding(.leading, 8)
 
-            // Title
             Text(title)
                 .font(.headline)
                 .foregroundColor(.primary)
@@ -38,12 +44,3 @@ struct CountryCardView: View {
         .padding(.horizontal)
     }
 }
-
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CountryCardView(image: "star", title: "Sample Title")
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
-}
-

@@ -7,7 +7,9 @@
 
 import UIKit
 import SwiftUI
+import Common
 import CountriesList
+import CountryDetails
 
 class MainCoordinator {
   var navigationController: UINavigationController
@@ -31,7 +33,25 @@ extension MainCoordinator: @preconcurrency CountriesListCoordinatorProtocol {
     navigationController.popViewController(animated: true)
   }
 
-  func showDetails(for country: String) {
-
-  }
+    @MainActor
+    func showCountryDetails(
+        name: String?,
+        capital: String?,
+        population: String?,
+        region: String?,
+        currency: String?,
+        flagImageURL: String?
+    ) {
+        let countryDetailView = CountryDetailsModuleFactory.makeModule(
+            with: self,
+            name: name,
+            capital: capital,
+            population: population,
+            region: region,
+            currency: currency,
+            flagImageURL: flagImageURL
+        )
+        let hostingController = UIHostingController(rootView: countryDetailView)
+        navigationController.pushViewController(hostingController, animated: true)
+    }
 }
