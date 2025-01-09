@@ -3,19 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		14011AC32D2D7693006C020E /* CountriesList in Frameworks */ = {isa = PBXBuildFile; productRef = 14011AC22D2D7693006C020E /* CountriesList */; };
+		14011AD72D2DA5DB006C020E /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 14011AD62D2DA5DB006C020E /* Networking */; };
+		14011ADA2D2DB1B0006C020E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 14011AD92D2DB1B0006C020E /* Kingfisher */; };
+		143CC1B52D2EC78E00674CB1 /* CountryDetails in Frameworks */ = {isa = PBXBuildFile; productRef = 143CC1B42D2EC78E00674CB1 /* CountryDetails */; };
+		14DF28932D2DD438008AEEB9 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 14DF28922D2DD438008AEEB9 /* Common */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14011A802D2D5D32006C020E /* CMETask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMETask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14011AD52D2D9DFF006C020E /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		14011ADB2D2DD0FB006C020E /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		14011A822D2D5D32006C020E /* CMETask */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CMETask;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		14011AA82D2D6B0D006C020E /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Modules/CountriesList,
+			);
+			target = 14011A7F2D2D5D32006C020E /* CMETask */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		14011A822D2D5D32006C020E /* CMETask */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (14011AA82D2D6B0D006C020E /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = CMETask; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14011ADA2D2DB1B0006C020E /* Kingfisher in Frameworks */,
+				14011AD72D2DA5DB006C020E /* Networking in Frameworks */,
+				143CC1B52D2EC78E00674CB1 /* CountryDetails in Frameworks */,
+				14011AC32D2D7693006C020E /* CountriesList in Frameworks */,
+				14DF28932D2DD438008AEEB9 /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,10 +53,15 @@
 		14011A772D2D5D32006C020E = {
 			isa = PBXGroup;
 			children = (
+				14011ADB2D2DD0FB006C020E /* Common */,
+				14011AD52D2D9DFF006C020E /* Networking */,
 				14011A822D2D5D32006C020E /* CMETask */,
+				14011AC12D2D7693006C020E /* Frameworks */,
 				14011A812D2D5D32006C020E /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		14011A812D2D5D32006C020E /* Products */ = {
 			isa = PBXGroup;
@@ -43,6 +69,13 @@
 				14011A802D2D5D32006C020E /* CMETask.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		14011AC12D2D7693006C020E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +98,11 @@
 			);
 			name = CMETask;
 			packageProductDependencies = (
+				14011AC22D2D7693006C020E /* CountriesList */,
+				14011AD62D2DA5DB006C020E /* Networking */,
+				14011AD92D2DB1B0006C020E /* Kingfisher */,
+				14DF28922D2DD438008AEEB9 /* Common */,
+				143CC1B42D2EC78E00674CB1 /* CountryDetails */,
 			);
 			productName = CMETask;
 			productReference = 14011A802D2D5D32006C020E /* CMETask.app */;
@@ -86,6 +124,7 @@
 				};
 			};
 			buildConfigurationList = 14011A7B2D2D5D32006C020E /* Build configuration list for PBXProject "CMETask" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,7 +133,9 @@
 			);
 			mainGroup = 14011A772D2D5D32006C020E;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				14011AD82D2DB1B0006C020E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 14011A812D2D5D32006C020E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,7 +218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -185,6 +226,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -234,12 +276,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -254,11 +297,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CMETask/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show your current country";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,11 +325,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CMETask/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show your current country";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +365,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14011AD82D2DB1B0006C020E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14011AC22D2D7693006C020E /* CountriesList */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesList;
+		};
+		14011AD62D2DA5DB006C020E /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		14011AD92D2DB1B0006C020E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14011AD82D2DB1B0006C020E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		143CC1B42D2EC78E00674CB1 /* CountryDetails */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountryDetails;
+		};
+		14DF28922D2DD438008AEEB9 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14011A782D2D5D32006C020E /* Project object */;
 }

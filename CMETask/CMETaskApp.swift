@@ -11,7 +11,9 @@ import SwiftUI
 struct CMETaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          let navigationController = UINavigationController()
+          let coordinator = MainCoordinator(navigationController: navigationController)
+          MainCoordinatorView(coordinator: coordinator)
         }
     }
 }
